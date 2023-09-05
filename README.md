@@ -2,6 +2,8 @@
 
   <p>A <b>Java Script Project</b> This contains Five Very usefull Java Script projects.</p>
 
+👉 Live Demo: <a href='https://kuldeepkdy.github.io/Java-Script-Project-Nora/'>Live Demo</a>
+
 <h3>Build with:</h3>
 
 » Vanila CSS <br>
