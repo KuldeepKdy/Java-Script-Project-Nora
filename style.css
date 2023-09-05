@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: gray;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#cursor {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+    transition: all linear 0.2s;
+}
+
+/*------------- section-1------------ */
+
+.section {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.section h3 {
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section h3::after {
+    content: " ";
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    background-color: gray;
+    left: 0;
+    bottom: 0;
+    border-radius: 1rem;
+}
+
+.section h3:hover::after {
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+
+.project1 {
+    background-color: gainsboro;
+    width: 300px;
+    padding: 0.5rem;
+    text-align: center;
+    position: relative;
+    margin: 1rem;
+}
+
+.project1 h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.project1 h1::after {
+    content: " ";
+    width: 0%;
+    position: absolute;
+    height: 2px;
+    background-color: gray;
+    left: 0;
+    bottom: 0;
+}
+
+.project1 h1:hover::after {
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+
+.project1 img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.project1 button {
+    margin-top: 15px;
+    padding: 10px 16px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.project1 h2 {
+    color: red;
+}
+
+/*------------- section-2------------ */
+
+.project2 {
+    background-color: gainsboro;
+    width: 300px;
+    padding: 0.5rem;
+    position: relative;
+    margin: 1rem;
+    text-align: center;
+}
+
+.project2 img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+i {
+    color: gainsboro;
+    position: absolute;
+    left: 50%;
+    top: 46%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-out;
+    opacity: 1;
+}
+
+
+
+/*------------- section-3------------ */
+
+.project3 {
+    background-color: gainsboro;
+    width: 300px;
+    padding: 0.1rem;
+    position: relative;
+    text-align: center;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.project3 img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+#sec3h1 {
+    color: gainsboro;
+    font-size: 9rem;
+}
+
+.text {
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    #sec3h1 {
+        font-size: 5rem;
+    }
+}
+
+
+/*------------- section-4------------ */
+.elem {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    position: relative;
+    text-align: left;
+    align-items: center;
+    border-bottom: 2px solid gainsboro;
+    border-top: 2px solid gainsboro;
+}
+
+.elem h1 {
+    font-size: 8vw;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+    color: gainsboro;
+}
+
+.elem img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    /* transform: translate(-50%, -50%); */
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+
+#sec4h {
+    font-size: 3rem;
+    color: skyblue;
+}
+
+
+
+/*------------- section-5------------ */
+#card {
+    width: 300px;
+    height: 480px;
+    background-color: gainsboro;
+    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid gray;
+    position: relative;
+    margin: 1rem;
+    text-align: center;
+}
+
+#storiyan {
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#storiyan::-webkit-scrollbar {
+    display: none;
+}
+
+.story {
+    border: 3px solid black;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.story img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
+
+#sec5h {
+    font-size: 2rem;
+    color: skyblue;
+}
