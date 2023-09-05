@@ -12,6 +12,6 @@
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src='https://github.com/KuldeepKdy/Basic-Java-ScriptProjects1/assets/134807119/ab902fae-6741-4380-b663-a36a1c4d6155'/>
+<img src='https://github.com/KuldeepKdy/GOLF-Website/assets/134807119/4613ed4b-449a-48a2-9962-6af2b0ecc658'/>
 
 </div>
