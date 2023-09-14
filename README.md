@@ -1,6 +1,13 @@
 <h2>About the project</h2>
 
-  <p>A <b>Java Script Project</b> This contains Five Very usefull Java Script projects.</p>
+  <p>A <b>Java Script Project</b> This contains Six Very usefull Java Script projects from basic to Advance.It is Fully Responsive.
+  1.Add Friend Feature
+  2.Instagram Like Feature
+  3.Advance Cursor
+  4.Advance Cursor Effects
+  5.Instagram Story Feature
+  6.TicTacToe Game
+  </p>
 
 👉 Live Demo: <a href='https://kuldeepkdy.github.io/Java-Script-Project-Nora/'>Live Demo</a>
 
