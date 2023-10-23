@@ -1,3 +1,37 @@
+//------------- Section-1--------------
+var text = document.querySelector("#info");
+var button = document.querySelector("#btnn");
+
+var val = 0;
+
+button.addEventListener("click", function () {
+  if (val == 0) {
+    text.innerHTML = "Friends";
+    text.style.color = "green";
+    button.innerHTML = "Un Friend";
+    val = 1;
+  } else {
+    text.innerHTML = "Stranger";
+    text.style.color = "red";
+    button.innerHTML = "Add Friend";
+    val = 0;
+  }
+});
+
+//------------- Section-2--------------
+var img = document.querySelector(".project2");
+var love = document.querySelector("i");
+
+img.addEventListener("dblclick", function () {
+  love.style.transform = "translate(-50%, -50%) scale(1)";
+  love.style.opacity = 0.8;
+  setTimeout(function () {
+    love.style.opacity = 0;
+  }, 1000);
+  setTimeout(function () {
+    love.style.transform = "translate(-50%, -50%) scale(0)";
+  }, 2000);
+});
 
 //------------- Section-3--------------
 var section = document.querySelector(".container");
