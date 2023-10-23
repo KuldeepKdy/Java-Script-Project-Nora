@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
     transition: all linear 0.2s;
 }
 
-/*------------- section-1 Add Friend Feature------------ */
+
 
 .section {
     height: 100vh;
@@ -76,87 +76,130 @@ body::-webkit-scrollbar-thumb {
     transition: all ease-out 0.5s;
 }
 
-.project1 {
-    background-color: gainsboro;
-    width: 300px;
-    padding: 0.5rem;
-    text-align: center;
-    position: relative;
-    margin: 1rem;
+/* ----------Section-1--------- */
+#panel {
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: whitesmoke;
 }
 
-.project1 h1 {
-    position: relative;
+#ptop {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: whitesmoke;
+    padding: 0px 30%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(58, 79, 58);
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.elem h2 {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.box {
+    color: rgb(31, 156, 81);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#pbdm {
+    width: 100%;
+    height: calc(100% - 100Px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bubble {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+#pbdm h1 {
+    font-size: 2.5rem;
+}
+
+#pbdm button {
+    --color: black;
+    font-family: inherit;
     display: inline-block;
-}
-
-.project1 h1::after {
-    content: " ";
-    width: 0%;
-    position: absolute;
-    height: 2px;
-    background-color: gray;
-    left: 0;
-    bottom: 0;
-}
-
-.project1 h1:hover::after {
-    width: 100%;
-    transition: all ease-out 0.5s;
-}
-
-.project1 img {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-.project1 button {
-    margin-top: 15px;
-    padding: 10px 16px;
-    font-weight: bold;
-    background-color: black;
-    color: white;
-    outline: none;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-.project1 h2 {
-    color: red;
-}
-
-/*------------- section-2 Instagram Like Feature------------ */
-
-.project2 {
-    background-color: gainsboro;
-    width: 300px;
-    padding: 0.5rem;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
     position: relative;
-    margin: 1rem;
-    text-align: center;
-}
-
-.project2 img {
-    width: 100%;
-    height: 400px;
     overflow: hidden;
-    object-fit: cover;
-    object-position: center;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
 }
 
-i {
-    color: gainsboro;
+#pbdm button:before {
+    content: "";
     position: absolute;
-    left: 50%;
-    top: 46%;
-    font-size: 2rem;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.2s ease-out;
-    opacity: 1;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#pbdm button:hover {
+    color: #fff;
+}
+
+#pbdm button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+#pbdm button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+#pbdm button:active:before {
+    background: black;
+    transition: background 0s;
+}
+
+.bubble {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 91, 67);
+    color: gainsboro;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    background-color: rgb(44, 61, 44);
 }
 
 
